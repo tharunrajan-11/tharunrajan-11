@@ -120,10 +120,78 @@ The UGV incorporates an advanced Software-Defined Radio (SDR) telemetry transpor
 
 ---
 
-## 📂 Other Selected Repositories
+## 📡 Featured Project 2: TeleLink SDR Telemetry Transmitter (FMCW Radar & AMC)
 
-- **[TeleLink_trasnmitter-](https://github.com/tharunrajan-11/TeleLink_trasnmitter-)**: Standalone Software-Defined Radio (SDR) telemetry transmitter with real-time FMCW Radar streaming, Rate 1/2 Convolutional FEC, and Distance-Adaptive Modulation (BPSK/QPSK/16-QAM/64-QAM).
-- **[NRF24_Image_Transmission](https://github.com/tharunrajan-11/NRF24_Image_Transmission)**: Wireless image transmission and progressive reassembly system using NRF24L01+ 2.4 GHz transceivers, Arduino Uno microcontrollers, and dedicated Web Dashboards for Transmitter & Receiver nodes.
+> **Repository**: [github.com/tharunrajan-11/TeleLink_trasnmitter-](https://github.com/tharunrajan-11/TeleLink_trasnmitter-)
+
+A high-reliability **Software-Defined Radio (SDR) telemetry transmission engine** engineered for real-time Frequency-Modulated Continuous-Wave (FMCW) radar telemetry and environmental wireless sensing.
+
+TeleLink combines physical-layer **Forward Error Correction (FEC)**, dynamic distance-driven **Adaptive Modulation & Coding (AMC: BPSK, QPSK, 16-QAM, and 64-QAM)**, and dual transport backends (**ZeroMQ IPC streams** and physical **Nuand bladeRF 2.0 micro SDR** hardware).
+
+```
+[ FMCW Radar / Sensor Telemetry ]
+               │
+               ▼
+[ 8-Field Telemetry Serialization & 8-Byte Stream Padding ]
+               │
+               ▼
+[ Rate 1/2 Convolutional FEC Encoder (K=7, [109, 79], Tailbiting) ]
+               │
+               ▼
+[ 32-bit Frame Sync Preamble (0xE15AE893) ]
+               │
+               ▼
+[ AMC Modulator: BPSK / QPSK / 16-QAM / 64-QAM ]
+[ Root-Raised Cosine (RRC) Pulse Shaping (sps=4, alpha=0.5) ]
+               │
+               ▼
+[ 0.8x Peak Amplitude Scaling & IQStreamProbe (FFT / Constellation) ]
+               │
+        ┌──────┴──────┐
+        ▼             ▼
+ [ ZeroMQ PUB Sink ]   [ bladeRF SDR Sink ]
+ (tcp://0.0.0.0:5001)  (600 MHz RF Carrier)
+```
+
+### TeleLink Adaptive Modulation & Coding (AMC) Matrix
+
+| Range / Distance | Modulation Scheme | Bits / Symbol | Operational Purpose | Min Required SNR | Spectral Efficiency |
+| :---: | :---: | :---: | :--- | :---: | :---: |
+| **0 – 20 m** | **64-QAM** | **6** bits/sym | Maximum throughput (dense payload bursts) | $\ge 22 \text{ dB}$ | $6.0 \text{ bps/Hz}$ |
+| **20 – 50 m** | **16-QAM** | **4** bits/sym | High-speed sensor telemetry | $\ge 15 \text{ dB}$ | $4.0 \text{ bps/Hz}$ |
+| **50 – 100 m** | **QPSK** | **2** bits/sym | Standard robust wireless telelink (Default) | $\ge 8 \text{ dB}$ | $2.0 \text{ bps/Hz}$ |
+| **> 100 m** | **BPSK** | **1** bit/sym | Maximum RF penetration & link survival | $< 8 \text{ dB}$ | $1.0 \text{ bps/Hz}$ |
+
+### Key Capabilities:
+- **Physical-Layer FEC**: Rate 1/2 Convolutional Encoder ($K=7, [109, 79]$) with `CC_TAILBITING` trellis eliminating zero-tail overhead and yielding $\approx 5.5\text{ dB}$ coding gain.
+- **8-Byte Tagged Stream Padding**: Automatically space-pads tagged streams so payload byte lengths are exact multiples of 8, preventing pipeline buffer stalls.
+- **Dual Output Sinks**:
+  - **ZeroMQ PUB IPC (`tcp://0.0.0.0:5001`)**: Low-latency complex64 baseband distribution over LAN and Tailscale.
+  - **bladeRF 2.0 micro SDR Sink (`soapy.sink`)**: Physical over-the-air transmission across 70 MHz to 6.0 GHz (600 MHz carrier) with software gain control (18 dB to 60 dB).
+- **Structured 8-Field Radar Telemetry**: Packages `Date, Time, FMCW Distance (%), Target Motion, Presence (%), Radar Status, Temperature, Vibration` into structured telemetry frames.
+
+---
+
+## 📷 Featured Project 3: NRF24L01 Wireless Dual-Node Image Transmission
+
+> **Repository**: [github.com/tharunrajan-11/NRF24_Image_Transmission](https://github.com/tharunrajan-11/NRF24_Image_Transmission)
+
+A complete dual-node wireless image transmission and progressive reassembly system using **two NRF24L01+ 2.4 GHz transceivers**, **two Arduino Uno microcontrollers**, and dedicated **Web Dashboards** for Transmitter (Laptop 1) and Receiver (Laptop 2):
+
+- **Progressive Reassembly**: Watch the received image render slice-by-slice as 28-byte chunks arrive.
+- **Hardware Flow Control**: ACK-handshaking between Python host and Arduino to eliminate serial buffer overflows.
+- **100% Bit-Exact Verification**: 32-bit CRC checksum guarantees received image matches the source.
+- **Independent & Unified Dashboards**: Standalone Transmitter (Port 8000), Receiver (Port 8001), and Unified Dual-Node Dashboard (Port 8080).
+
+---
+
+## 📂 Quick Repository Index
+
+| Repository | Focus Area | Key Technologies |
+| :--- | :--- | :--- |
+| **[Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing](https://github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing)** | Robotics, BEV, VLM & Radar | Python, CUDA, Depth Anything V2, YOLOv8, Qwen2.5-VL, 24 GHz Radar |
+| **[TeleLink_trasnmitter-](https://github.com/tharunrajan-11/TeleLink_trasnmitter-)** | SDR Telemetry & Adaptive Modulation | GNU Radio 3.10, bladeRF 2.0 micro, AMC (BPSK/QPSK/16QAM/64QAM), FEC |
+| **[NRF24_Image_Transmission](https://github.com/tharunrajan-11/NRF24_Image_Transmission)** | 2.4 GHz RF Image Telemetry | NRF24L01+, Arduino Uno, C++, Flask, Progressive Image Reassembly |
 
 ---
 
