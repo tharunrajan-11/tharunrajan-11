@@ -1,5 +1,5 @@
 # Hi, I'm Tharun (@tharunrajan-11) 👋
-### Robotics, Spatial AI & Software-Defined Radio (SDR) Engineer
+
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/tharunrajan-11)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
