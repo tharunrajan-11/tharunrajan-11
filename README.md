@@ -1,4 +1,4 @@
-# Hi, I'm Tharun (@tharunrajan-11) 👋
+# Hi, I'm Tharun (@tharunrajan-11) 
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/tharunrajan-11)
@@ -12,7 +12,7 @@
 
 ---
 
-## 🌟 Featured Project: Dual-Link UGV Smart Vision System & Wireless Sensing (SARA)
+##  Featured Project: Dual-Link UGV Smart Vision System & Wireless Sensing (SARA)
 
 > **Repository**: [github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing](https://github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing)
 
