@@ -12,7 +12,7 @@
 
 ---
 
-##  Featured Project: Dual-Link UGV Smart Vision System & Wireless Sensing (SARA)
+## Featured Project 1: Dual-Link UGV Smart Vision System & Wireless Sensing (SARA)
 
 > **Repository**: [github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing](https://github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing)
 
@@ -120,7 +120,7 @@ The UGV incorporates an advanced Software-Defined Radio (SDR) telemetry transpor
 
 ---
 
-## 📡 Featured Project 2: TeleLink SDR Telemetry Transmitter (FMCW Radar & AMC)
+## Featured Project 2: TeleLink SDR Telemetry Transmitter (FMCW Radar & AMC)
 
 > **Repository**: [github.com/tharunrajan-11/TeleLink_trasnmitter-](https://github.com/tharunrajan-11/TeleLink_trasnmitter-)
 
@@ -172,7 +172,7 @@ TeleLink combines physical-layer **Forward Error Correction (FEC)**, dynamic dis
 
 ---
 
-## 📷 Featured Project 3: NRF24L01 Wireless Dual-Node Image Transmission
+## Featured Project 3: NRF24L01 Wireless Dual-Node Image Transmission
 
 > **Repository**: [github.com/tharunrajan-11/NRF24_Image_Transmission](https://github.com/tharunrajan-11/NRF24_Image_Transmission)
 
@@ -185,7 +185,7 @@ A complete dual-node wireless image transmission and progressive reassembly syst
 
 ---
 
-## 📂 Quick Repository Index
+## Quick Repository Index
 
 | Repository | Focus Area | Key Technologies |
 | :--- | :--- | :--- |
