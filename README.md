@@ -76,21 +76,7 @@ A complete cross-laptop 2.4 GHz wireless image transmission and progressive reas
 - **100% Bit-Exact Verification**: 32-bit CRC checksum computed over source images and verified against reconstructed frames upon completion.
 - **Dedicated Web Dashboards**: Standalone Transmitter UI (Port 8000), Receiver UI (Port 8001), and Unified Dual-Node Dashboard (Port 8080).
 
-### 4. ROS 2 Search & Rescue (SAR) Autonomous Rover Simulation & AI Sensor Fusion
-
-> **Repository**: [ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion](https://github.com/tharunrajan-11/ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion)
-
-An autonomous Search & Rescue (SAR) mobile robotics simulation pipeline featuring multi-modal AI sensor fusion (dual 1080p optical cameras, 5.8 GHz FMCW-C radar, 60 GHz mmWave radar), through-wall survivor detection, Inverse Perspective Mapping (IPM) Bird's-Eye View (BEV) mapping, and Friis RF telemetry modeling across 9 Gazebo 11 physics worlds.
-
-#### Key Highlights
-- **Autonomous Multi-Sector Navigation**: 8-waypoint sector exploration with dynamic collision avoidance and automated 360-degree radar inspection sweeps.
-- **Through-Wall AI Survivor Detection**: Multi-modal fusion combining microwave Doppler processing across C-band FMCW and mmWave radar arrays.
-- **Inverse Perspective Mapping (IPM) BEV**: Dual-camera geometric homography transforming front and rear camera feeds into 360-degree ground-plane surround maps.
-- **Base Station RF Telemetry**: Remote command shelter monitoring calculating real-time Friis free-space path loss and RF RSSI (dBm).
-- **9 Gazebo Simulation Environments**: Realistic disaster scenarios, building collapse zones, Mars terrain, and obstacle courses.
-
 ---
-
 
 <p align="center">
   <em>Developed by Tharun | Autonomous Mobile Robotics, Spatial AI, and Next-Generation Wireless Systems</em>
