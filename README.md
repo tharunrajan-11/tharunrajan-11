@@ -78,6 +78,25 @@ A complete cross-laptop 2.4 GHz wireless image transmission and progressive reas
 
 ---
 
+### 4. FDM Multi-Channel Audio Multiplexing & Extraction System
+
+> **Repository**: [FDM-Multi-Channel-Audio-Multiplexing-System](https://github.com/tharunrajan-11/FDM-Multi-Channel-Audio-Multiplexing-System)
+
+A real-time Software-Defined Radio (SDR) and Digital Signal Processing (DSP) framework in GNU Radio 3.10 and Python implementing Frequency Division Multiplexing (FDM) to transmit simultaneous multi-speaker audio across discrete subcarriers and selectively demultiplex individual voices.
+
+<p align="center">
+  <img src="imagess/FDM-Multi-Channel-Audio-Multiplexing-System.png" width="98%" alt="FDM Multi-Channel Audio Multiplexing & Extraction System" />
+</p>
+
+#### Key Highlights
+- **Frequency Division Multiplexing (FDM)**: Modulates multiple independent acoustic speech streams onto dedicated carrier channels (2.0 kHz, 10.0 kHz, 16.0 kHz) over a shared baseband medium.
+- **Frequency Translating FIR Filter**: Simultaneously downconverts selected subcarriers directly to baseband (0 Hz) and applies narrow-band low-pass decimation in a single DSP block.
+- **Squelch Gating & Coherent Demodulation**: Suppresses baseline noise fluctuations below -50 dB and normalizes output amplitude for clear acoustic reconstruction.
+- **A/B Auditory Comparison Switch**: Interactive GUI switch toggling between raw mixed audio (simultaneous multi-speaker cocktail party) and clean extracted voice.
+- **Real-Time PyQt5 Visualization**: Multi-channel oscilloscope time sinks displaying raw input speech, modulated carrier bands, and filtered output waveforms.
+
+---
+
 <p align="center">
   <em>Developed by Tharun | Autonomous Mobile Robotics, Spatial AI, and Next-Generation Wireless Systems</em>
 </p>
