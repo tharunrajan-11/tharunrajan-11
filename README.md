@@ -6,7 +6,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/tharunrajan-11)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![C++](https://img.shields.io/badge/C++-17-00599C?logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![CUDA](https://img.shields.io/badge/CUDA-13.2-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![GNU Radio](https://img.shields.io/badge/GNU_Radio-3.10-004D40?logo=gnuradio&logoColor=white)](https://www.gnuradio.org/)
 [![bladeRF](https://img.shields.io/badge/Nuand-bladeRF_2.0_micro-0284C7)](https://www.nuand.com/bladerf-2-0-micro/)
