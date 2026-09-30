@@ -66,7 +66,7 @@ A high-reliability Software-Defined Radio (SDR) telemetry transmission engine bu
 A complete cross-laptop 2.4 GHz wireless image transmission and progressive reassembly pipeline powered by dual Arduino Uno transceivers and dedicated interactive web dashboards.
 
 <p align="center">
-  <img src="imagess/nrf24_transmission_pipeline.png" width="98%" alt="NRF24L01 Dual-Node Wireless Transmission Pipeline" />
+  <img src="imagess/Detailed-System-Workflow.png" width="98%" alt="Detailed System Workflow - NRF24L01 Wireless Dual-Node Image Transmission" />
 </p>
 
 #### Key Highlights
