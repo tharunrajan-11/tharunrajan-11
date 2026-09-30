@@ -76,6 +76,19 @@ A complete cross-laptop 2.4 GHz wireless image transmission and progressive reas
 - **100% Bit-Exact Verification**: 32-bit CRC checksum computed over source images and verified against reconstructed frames upon completion.
 - **Dedicated Web Dashboards**: Standalone Transmitter UI (Port 8000), Receiver UI (Port 8001), and Unified Dual-Node Dashboard (Port 8080).
 
+### 4. ROS 2 Search & Rescue (SAR) Autonomous Rover Simulation & AI Sensor Fusion
+
+> **Repository**: [ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion](https://github.com/tharunrajan-11/ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion)
+
+An autonomous Search & Rescue (SAR) mobile robotics simulation pipeline featuring multi-modal AI sensor fusion (dual 1080p optical cameras, 5.8 GHz FMCW-C radar, 60 GHz mmWave radar), through-wall survivor detection, Inverse Perspective Mapping (IPM) Bird's-Eye View (BEV) mapping, and Friis RF telemetry modeling across 9 Gazebo 11 physics worlds.
+
+#### Key Highlights
+- **Autonomous Multi-Sector Navigation**: 8-waypoint sector exploration with dynamic collision avoidance and automated 360-degree radar inspection sweeps.
+- **Through-Wall AI Survivor Detection**: Multi-modal fusion combining microwave Doppler processing across C-band FMCW and mmWave radar arrays.
+- **Inverse Perspective Mapping (IPM) BEV**: Dual-camera geometric homography transforming front and rear camera feeds into 360-degree ground-plane surround maps.
+- **Base Station RF Telemetry**: Remote command shelter monitoring calculating real-time Friis free-space path loss and RF RSSI (dBm).
+- **9 Gazebo Simulation Environments**: Realistic disaster scenarios, building collapse zones, Mars terrain, and obstacle courses.
+
 ---
 
 ## Repositories Index
@@ -85,6 +98,7 @@ A complete cross-laptop 2.4 GHz wireless image transmission and progressive reas
 | **Dual-Link UGV (SARA)** | Autonomous Robotics, Spatial AI | Python, CUDA, Depth Anything V2, YOLOv8, Qwen2.5-VL, 24 GHz Radar | [View Repo](https://github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing) |
 | **TeleLink SDR Transmitter** | Software-Defined Radio, FMCW Radar | GNU Radio 3.10, Python, bladeRF 2.0 micro, ZeroMQ, AMC (BPSK-64QAM) | [View Repo](https://github.com/tharunrajan-11/TeleLink_trasnmitter-) |
 | **NRF24 Image Transmission** | 2.4 GHz RF Telemetry, Embedded C++ | NRF24L01+, Arduino Uno, C++, Flask, Canvas Progressive Rendering | [View Repo](https://github.com/tharunrajan-11/NRF24_Image_Transmission) |
+| **ROS 2 SAR Rover Simulation** | Autonomous Robotics, Simulation | ROS 2 Humble, Gazebo 11, C++, Python, FMCW-C / mmWave Radar, IPM BEV | [View Repo](https://github.com/tharunrajan-11/ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion) |
 
 ---
 
