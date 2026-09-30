@@ -91,16 +91,6 @@ An autonomous Search & Rescue (SAR) mobile robotics simulation pipeline featurin
 
 ---
 
-## Repositories Index
-
-| Project | Domain | Core Stack | Repository Link |
-| :--- | :--- | :--- | :--- |
-| **Dual-Link UGV (SARA)** | Autonomous Robotics, Spatial AI | Python, CUDA, Depth Anything V2, YOLOv8, Qwen2.5-VL, 24 GHz Radar | [View Repo](https://github.com/tharunrajan-11/Dual-Link-UGV-Smart-Vision-System-and-Wireless-Sensing) |
-| **TeleLink SDR Transmitter** | Software-Defined Radio, FMCW Radar | GNU Radio 3.10, Python, bladeRF 2.0 micro, ZeroMQ, AMC (BPSK-64QAM) | [View Repo](https://github.com/tharunrajan-11/TeleLink_trasnmitter-) |
-| **NRF24 Image Transmission** | 2.4 GHz RF Telemetry, Embedded C++ | NRF24L01+, Arduino Uno, C++, Flask, Canvas Progressive Rendering | [View Repo](https://github.com/tharunrajan-11/NRF24_Image_Transmission) |
-| **ROS 2 SAR Rover Simulation** | Autonomous Robotics, Simulation | ROS 2 Humble, Gazebo 11, C++, Python, FMCW-C / mmWave Radar, IPM BEV | [View Repo](https://github.com/tharunrajan-11/ROS2-SAR-Rover-Simulation-and-AI-Sensor-Fusion) |
-
----
 
 <p align="center">
   <em>Developed by Tharun | Autonomous Mobile Robotics, Spatial AI, and Next-Generation Wireless Systems</em>
