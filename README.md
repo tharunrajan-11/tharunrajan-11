@@ -97,25 +97,6 @@ A real-time Software-Defined Radio (SDR) and Digital Signal Processing (DSP) fra
 
 ---
 
-### 5. BladeRF 2.0 Micro ADS-B Flight Radar Receiver
-
-> **Repository**: [bladeRF-ADS-B-Flight-Tracker](https://github.com/tharunrajan-11/bladeRF-ADS-B-Flight-Tracker)
-
-A real-time Software-Defined Radio (SDR) 1090 MHz Mode-S Extended Squitter flight tracking receiver engineered for the Nuand bladeRF 2.0 micro, featuring direct C-driver IQ streaming, Pulse Position Modulation (PPM) demodulation, CRC-24 parity decoding, and interactive terminal radar tracking.
-
-<p align="center">
-  <img src="imagess/bladerf_adsb_flight_radar.png" width="98%" alt="bladeRF ADS-B Flight Radar Receiver" />
-</p>
-
-#### Key Highlights
-- **Direct Low-Level C Driver**: Interfaces natively with `libbladeRF.so.2` using high-throughput C-bindings for zero-copy baseband IQ capture at 2.0 MSps with zero packet loss.
-- **PPM Demodulation & CRC-24 Validation**: Vectorized 8 µs preamble sync detector matching 1090 MHz pulses with real-time 24-bit cyclic redundancy check parity verification.
-- **Full Avionics Telemetry Decoding**: Decodes Mode-S Extended Squitter messages (Type Codes 1–19) to extract aircraft ICAO, callsign, barometric/geometric altitude, ground speed, and heading.
-- **Global Compact Position Reporting (CPR)**: High-precision latitude/longitude coordinate calculation using paired even and odd CPR airborne position frames.
-- **Live Terminal Flight Radar Cockpit**: Real-time ANSI-color terminal table displaying active airspace aircraft, vertical climb/descent rates, signal RSSI, and message statistics.
-
----
-
 <p align="center">
   <em>Developed by Tharun | Autonomous Mobile Robotics, Spatial AI, and Next-Generation Wireless Systems</em>
 </p>
