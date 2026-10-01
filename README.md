@@ -98,5 +98,5 @@ A real-time Software-Defined Radio (SDR) and Digital Signal Processing (DSP) fra
 ---
 
 <p align="center">
-  <em>Developed by Tharun | Autonomous Mobile Robotics, Spatial AI, and Next-Generation Wireless Systems</em>
+  <em></em>
 </p>
