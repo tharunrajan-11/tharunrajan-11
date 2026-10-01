@@ -1,7 +1,7 @@
 # Hi, I'm Tharun (@tharunrajan-11)
 
 
-**Electronics and Communication Engineering Undergraduate | Exploring Electronics, RF, Embedded Systems & Emerging Technologies**
+**Electronics and Communication Engineering Undergraduate |AI,Exploring Electronics, RF, Embedded Systems & Emerging Technologies**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/tharunrajan-11)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](https://www.python.org/)
